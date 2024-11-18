@@ -71,14 +71,14 @@ namespace AppAdvisory.AA
 
 			string path = Application.dataPath;
 
-			if (Directory.Exists (path + "/Demigiant/DOTween")) {
+			if (Directory.Exists (path + "/Plugins/Demigiant/DOTween")) {
 
 
 			try
 			{
 			
 
-				IEnumerable<string> files = Directory.GetFiles(path + "/Demigiant/DOTween", "DOTween.dll", SearchOption.AllDirectories);
+				IEnumerable<string> files = Directory.GetFiles(path + "/Plugins/Demigiant/DOTween", "DOTween.dll", SearchOption.AllDirectories);
 //					.Where(s => s.CompareTo("DOtween.dll") == 0);
 
 				//					.Where(s => s.EndsWith(".mp3") || s.EndsWith(".wav") || s.EndsWith(".aif") || s.EndsWith(".ogg"));
