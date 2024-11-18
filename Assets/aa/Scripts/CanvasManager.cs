@@ -11,6 +11,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using YG;
+
 #if AADOTWEEN
 using DG.Tweening;
 #endif
@@ -41,7 +43,7 @@ namespace AppAdvisory.AA
 		/// <summary>
 		/// Facebook url open by the native app on mobile
 		/// </summary>
-		public string facebookApp = "fb://profile/515431001924232" ;
+		public string facebookApp = "fb://profile/515431001924232";
 		/// <summary>
 		/// Facebook url open by the web browser if failed to open the native app
 		/// </summary>
@@ -53,10 +55,10 @@ namespace AppAdvisory.AA
 		/// </summary>
 		AudioSource music
 		{
-			get 
+			get
 			{
 				if (_music == null)
-					_music = Camera.main.GetComponentInChildren<AudioSource> ();
+					_music = Camera.main.GetComponentInChildren<AudioSource>();
 
 				return _music;
 			}
@@ -72,7 +74,14 @@ namespace AppAdvisory.AA
 		/// </summary>
 		void SetLevelText(int level)
 		{
-			this.m_levelText.text = "Level " + level.ToString() + " / 1200";
+			if (YandexGame.EnvironmentData.language == "ru" || YandexGame.EnvironmentData.browserLang == "ru")
+			{
+                this.m_levelText.text = "Уровень " + level.ToString() + " / 1200";
+            }
+			else
+			{
+				this.m_levelText.text = "Level " + level.ToString() + " / 1200";
+			}
 		}
 
 		/// <summary>
