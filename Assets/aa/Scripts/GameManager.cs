@@ -17,6 +17,7 @@ using DG.Tweening;
 #endif
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using YG;
 #if APPADVISORY_LEADERBOARD
 using AppAdvisory.social;
 #endif
@@ -716,6 +717,8 @@ namespace AppAdvisory.AA
 			#else
 		if(count >= numberOfPlayToShowInterstitial)
 		{
+			YandexGame.FullscreenShow();
+
 			Debug.LogWarning("To show ads, please have a look to Very Simple Ad on the Asset Store, or go to this link: " + VerySimpleAdsURL);
 			Debug.LogWarning("Very Simple Ad is already implemented in this asset");
 			Debug.LogWarning("Just import the package and you are ready to use it and monetize your game!");
