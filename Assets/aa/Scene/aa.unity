@@ -7549,6 +7549,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11456834, guid: dbfc4bc6a5fad4f2882cbf511e4e706b, type: 3}
+      propertyPath: beepFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f89f68868ec7fd44a804228b0fb6619, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
