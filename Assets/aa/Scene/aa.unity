@@ -1687,7 +1687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5b67812fc2c4f4f38a5dc3ee46ab821c, type: 3}
+    m_Font: {fileID: 12800000, guid: 9c997551aae63d948bad7ed210ef350a, type: 3}
     m_FontSize: 101
     m_FontStyle: 0
     m_BestFit: 0
@@ -4745,6 +4745,15 @@ PrefabInstance:
     - target: {fileID: 467254, guid: cf230ba2ed14c433b86453ad65a32839, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426810, guid: cf230ba2ed14c433b86453ad65a32839, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 9c997551aae63d948bad7ed210ef350a,
+        type: 3}
+    - target: {fileID: 11431610, guid: cf230ba2ed14c433b86453ad65a32839, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
